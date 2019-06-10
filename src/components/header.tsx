@@ -1,5 +1,5 @@
-import React from 'react'
-import ParcelLogo from '../img/parcel-logo.svg'
+import * as React from 'react'
+import { ReactComponent as ParcelLogo } from '../img/parcel-logo.svg'
 
 const Header = _ => (
   <header>
