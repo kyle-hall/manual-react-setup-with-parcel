@@ -11,7 +11,8 @@
   },
   "jest": {
     "transform": {
-      "^.+\\.js$": "babel-jest"
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.(scss|css|svg)$": "<rootDir>/assetTransformers/genericTransformer.js"
     },
     "setupFiles": [
       "<rootDir>/jest.setup.js"
@@ -28,7 +29,6 @@
     "babel-jest": "24.8.0",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
-    "identity-obj-proxy": "3.0.0",
     "jest": "24.8.0",
     "node-sass": "4.12.0",
     "parcel-bundler": "1.12.3"
