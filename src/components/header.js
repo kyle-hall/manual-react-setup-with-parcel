@@ -1,12 +1,12 @@
 import React from 'react'
-import ParcelLogo from '../img/parcel-logo.svg'
+import GameboyImage from '../img/gameboy.svg'
 
 const Header = _ => (
   <header>
     <nav className='navbar' role='navigation' aria-label='main navigation'>
       <div className='navbar-brand'>
         <a href='/' className='navbar-item'>
-          <img src={ParcelLogo} alt='parcel logo' width='120' />
+          <img src={GameboyImage} alt='cartoon gameboy' width='120' height='200' />
         </a>
       </div>
     </nav>
