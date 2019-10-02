@@ -12,10 +12,20 @@
   "jest": {
     "transform": {
       "^.+\\.js$": "babel-jest",
-      "^.+\\.(svg)$": "<rootDir>/assetTransformers/genericTransformer.js"
+      "^.+\\.(svg)$": "<rootDir>/assetTransformers/genericTransformer.js",
+      "^.+\\.scss$": "sass-jest"
     },
     "setupFiles": [
       "<rootDir>/jest.setup.js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx",
+      "ts",
+      "tsx",
+      "node",
+      "scss"
     ]
   },
   "keywords": [],
@@ -30,7 +40,9 @@
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
     "jest": "24.8.0",
-    "parcel-bundler": "1.12.3"
+    "jest-css-modules-transform": "^2.5.0",
+    "parcel-bundler": "1.12.3",
+    "sass-jest": "^0.1.7"
   },
   "dependencies": {
     "react": "16.8.6",
